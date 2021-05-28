@@ -1,10 +1,76 @@
 import React from 'react';
+import Header from './Header';
+import Main from './Main';
+import Footer from './Footer';
 
 export default class App extends React.Component{
     render(){
         return(
-            <div>
-                <h1>Hello World!!</h1>
+            <div className="header">
+                <Header />
+                <Main />
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>                
+                <div id="home">Home</div>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
+                <Footer />
             </div>
         );
     }
