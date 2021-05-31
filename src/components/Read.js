@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Link, useLocation } from 'react-router-dom';
+import { Link /*, useLocation*/ } from 'react-router-dom';
 
 const Read = (props) => {
     // usando hook 
@@ -9,13 +9,15 @@ const Read = (props) => {
     const [id_cidade, setid] = useState();
 
 
-    let Location = useLocation();
+    //let Location = useLocation();
 
 
-    console.log(Location);
+    //console.log(Location);
     console.log(props,'props');
-    let Id = Location.value.Id;   
-    
+    console.log(props.match.params.id);
+    //let Id = Location.value.Id;   
+    let Id = props.match.params.id;
+
     console.log(Id, " Location.data.Id novo id");
 
     useEffect(() => {

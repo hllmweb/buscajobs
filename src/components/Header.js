@@ -1,8 +1,6 @@
 import React from 'react';
 import Nav from './header/Nav';
-import ButtonMob from './header/ButtonMob';
-import Logo from './header/Logo';
-import Address from './header/Address';
+
 
 export default class Header extends React.Component{
     
@@ -10,10 +8,11 @@ export default class Header extends React.Component{
         return(
             <div className="header">
                 <Nav />
-                <ButtonMob />
-                <Logo />
-                <Address />
             </div>
         );
     }
 }
+
+/*<ButtonMob />
+<Logo />
+<Address />*/
