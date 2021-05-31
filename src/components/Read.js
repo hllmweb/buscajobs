@@ -25,6 +25,8 @@ const Read = (props) => {
           'p_id_cidade': Id
         });
 
+        
+    
 
         //axios(`https://jsonplaceholder.typicode.com/posts/${Id}`)
         axios
@@ -37,6 +39,8 @@ const Read = (props) => {
           let getid = data.data.id_cidade;
         
           // settitle(gettitle);
+
+
           setbody(getbody)
           setid(getid)
           

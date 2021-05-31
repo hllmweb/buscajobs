@@ -1,11 +1,13 @@
 import React from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import LoadingSpinner from './loading/LoadingSpinner';
 
 
 export default class Cards extends React.Component{
     state = {
-        post: []
+        post: [],
+        loading: false,
     }
  
     componentDidMount(){
@@ -15,6 +17,7 @@ export default class Cards extends React.Component{
         });
         
 
+        this.setState({loading: true }, () => {
         axios 
             .post("https://api-buscajobs.herokuapp.com/cidade/lstCidade/", 
                 params,
@@ -22,18 +25,23 @@ export default class Cards extends React.Component{
             )
             .then(res => {
                 this.setState({
+                    loading: false,
                     post: res.data
                 });
             }).catch(function(error){
                 console.log(error);
             });
+        });
     }
 
 
     render(){
+        const { loading } = this.state;
+    
         return(
-            <>
+            <>  
                 <h3>Card</h3>
+                {loading ? <LoadingSpinner /> :   
                 <ul>
                 {this.state.post.map(post =>{
                     let Id = post.id_cidade;
@@ -42,7 +50,7 @@ export default class Cards extends React.Component{
                         <li key={post.id_cidade}>
                             <div className="description">
                                 Descrição
-                                {post.cidade}
+                               {post.cidade}
                             </div>
                             <Link to={{
                                 pathname: `/read/${post.id_cidade}`,
@@ -50,14 +58,14 @@ export default class Cards extends React.Component{
                             }}>
                             Leia Mais Informações Aqui
                             </Link>
-
-                            
                         </li>
                     
                     );
                    
                 })}
                 </ul>
+                } 
+                
             </>
         );
     }
