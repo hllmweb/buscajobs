@@ -4,7 +4,7 @@ export default class Contact extends React.Component{
     
     render(){
         return(
-            null
+           <h1>Contato</h1>
         );
     }
 }

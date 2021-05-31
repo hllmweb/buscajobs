@@ -4,7 +4,9 @@ export default class Information extends React.Component{
     
     render(){
         return(
-            null
+            <h1>
+                Informações
+            </h1>
         );
     }
 }
