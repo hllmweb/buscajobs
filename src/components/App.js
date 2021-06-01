@@ -1,7 +1,5 @@
 import React from 'react';
-//import Header from './Header';
-import Header from './header/IndexComponents';
-import Logo from './header/Logo'
+import HeaderPrincipal from './Header';
 import Main from './Main';
 
 
@@ -10,10 +8,7 @@ export default class App extends React.Component{
     render(){
         return(
         <>  
-            <Header>
-                <Logo />
-            </Header>
-          
+            <HeaderPrincipal />
             <Main />
         </>
         );
