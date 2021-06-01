@@ -7,4 +7,23 @@ const Header = styled.div`
     height: 200px;
 `;
 
-export default Header;
+const Logo = styled.div`
+    width:30%;
+    display:inline-block;
+    vertical-align: middle;
+    margin:32px 0;
+    position:relative;
+    left:5%;
+`;
+const Nav = styled.div`
+    width:70%;
+    display:inline-block;
+    vertical-align: middle;
+    margin:32px 0;
+    position:relative;
+    right:5%;
+    background-color:red;
+    text-align:right;
+`;
+
+export default {Header, Logo, Nav};

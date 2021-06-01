@@ -19,80 +19,54 @@ export default class Main extends React.Component{
                         <Route path="/read/:id" strict exact component={Read} />
                     </Switch>
                 </Router>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
+
+                
+                <div className="cards grid container">
+                    <div className="item">
+                        <a href="">
+                        <div className="flex">
+                            <div className="title width-100">
+                                <span className="color-line-1">Contabilidade</span>
+                                <div className="description">Breve descrição da profissão em destaque</div>
+                            </div>
+                            <button className="btn-more">Saiba Mais</button>
+                        
+                        </div>
+                        </a>
+                    </div>
+
+                    <div className="item">
+                        <a href="">
+                        <div className="flex">
+                            <div className="title width-100">
+                                <span className="color-line-1">Contabilidade</span>
+                                <div className="description">Breve descrição da profissão em destaque</div>
+                            </div>
+                            <button className="btn-more">Saiba Mais</button>
+                        
+                        </div>
+                        </a>
+                    </div>
+
+                    <div className="item">
+                        <a href="">
+                        <div className="flex">
+                            <div className="title width-100">
+                                <span className="color-line-1">Contabilidade</span>
+                                <div className="description">Breve descrição da profissão em destaque</div>
+                            </div>
+                            <button className="btn-more">Saiba Mais</button>
+                        
+                        </div>
+                        </a>
+                    </div>
+
+                </div>
+
+
                 <div id="inicio">teste01</div>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
+                
                 <div id="sobre">teste02</div>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
-                <br></br><br></br><br></br><br></br>
             </>
         );
     }
