@@ -6,7 +6,7 @@ export default class Logo extends React.Component{
         return(
             <div className="logo">
                 <a href="/">
-                    <img src="./img/logo.png" alt="logo" />
+                    <img src={process.env.PUBLIC_URL+"/img/logo.png"} alt="logo" />
                 </a>
             </div>
         );
