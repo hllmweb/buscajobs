@@ -10,19 +10,24 @@ class SearchForm extends React.Component {
     }
   */
 
-  
-    state = {
-        post: [],
-        loading: false,
-        onSelect: '',
-        username: ''
+    constructor(props) {
+        super(props);
+        this.state = {
+            post: [],
+            loading: false,
+            onSelect: '',
+            username: ''
+        };
+    
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
- 
-    // handleChange(event) {    this.setState({value: event.target.value});  }
-    // handleSubmit(event) {
-    //   alert('Um nome foi enviado: ' + this.state.value);
-    //   event.preventDefault();
-    // }
+
+    handleChange(event) {    this.setState({value: event.target.value});  }
+    handleSubmit(event) {
+        alert('Um nome foi enviado: ' + this.state.value);
+        event.preventDefault();
+    }
 
     componentDidMount(){
 
@@ -48,7 +53,7 @@ class SearchForm extends React.Component {
         });
     }
 
-    mySubmitHandler = (event) => {
+    /*mySubmitHandler = (event) => {
         event.preventDefault();
        
         alert("Pesquisar" + this.state.username);
@@ -61,7 +66,7 @@ class SearchForm extends React.Component {
         console.log(event.target.options[selectedIndex].getAttribute('data-key'));
         //alert(event.target.options[selectedIndex].getAttribute('data-key'));
         
-    }
+    }*/
 
  
 
@@ -70,11 +75,11 @@ class SearchForm extends React.Component {
 
       return (
 
-        <form onSubmit={this.mySubmitHandler}>
+        <form onSubmit={this.handleSubmit}>
                         <div className="flex-col">
                             <div className="inline width-40">
                                 <div className="select">
-                                    <select name="cidade" className="select-text" required onChange={this.onSelect}>
+                                    <select name="cidade" className="select-text" required onChange={this.handleChange}>
                                         <option defaultValue=""></option>
                                         {
                                             this.state.post.map((item, key) => {
@@ -100,7 +105,7 @@ class SearchForm extends React.Component {
                             <div className="inline width-40">
                                 <div className="input-container">
                                     <div className="select">
-                                        <select name="vaga" className="select-text" required onChange={this.onSelect}>
+                                        <select name="vaga" className="select-text" required onChange={this.handleChange}>
                                             <option defaultValue=""></option>
                                             <option value="Programador PHP" data-key="Programador PHP">Programador PHP</option> 
                                             <option value="Editor de Vídeo" data-key="Editor de Vídeo">Editor de Vídeo</option> 
